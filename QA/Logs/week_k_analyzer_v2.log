@@ -1,0 +1,5 @@
+2025-01-13 20:49:08,572 - ERROR - QA: 程序运行出错: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/PROD/config.json/QA/CSVs/Filter4Out.csv'
+2025-01-13 20:57:49,970 - ERROR - QA: 程序运行出错: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/PROD/config.json/QA/CSVs/Filter4Out.csv'
+2025-01-13 21:06:45,442 - ERROR - QA: 程序运行出错: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/PROD/config.json/QA/CSVs/Filter4Out.csv'
+2025-01-13 21:09:26,978 - INFO - QA: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/QA/CSVs/Filter4Out.csv
+2025-01-13 21:09:27,000 - INFO - QA: 分析结果已保存到数据库 filter_history 表

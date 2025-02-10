@@ -1,0 +1,55 @@
+2024-12-27 10:18:31,127 - INFO - Found 7 CSV files: StkList_20241227_092229.csv, StkList_20241226_215427.csv, StkList_20241225_160131.csv, StkList_20241224_162918.csv, StkList_20241224_063324.csv, StkList_20241224_063149.csv, StkList_20241222_090518.csv
+2024-12-27 10:18:31,127 - INFO - Keeping newest files: StkList_20241227_092229.csv, StkList_20241226_215427.csv
+2024-12-27 10:18:31,128 - INFO - Removed old CSV file: StkList_20241225_160131.csv
+2024-12-27 10:18:31,129 - INFO - Removed old CSV file: StkList_20241224_162918.csv
+2024-12-27 10:18:31,129 - INFO - Removed old CSV file: StkList_20241224_063324.csv
+2024-12-27 10:18:31,131 - INFO - Removed old CSV file: StkList_20241224_063149.csv
+2024-12-27 10:18:31,131 - INFO - Removed old CSV file: StkList_20241222_090518.csv
+2024-12-27 10:18:31,140 - INFO - Found 6 month tables: Dec26, Dec25, Dec24, Dec23, Dec20, Dec19
+2024-12-27 10:18:31,140 - INFO - Keeping newest tables: Dec26, Dec25, Dec24, Dec23
+2024-12-27 10:18:31,167 - INFO - Dropped old table: Dec20
+2024-12-27 10:18:31,174 - INFO - Dropped old table: Dec19
+2024-12-27 10:18:31,174 - INFO - Clean-up completed successfully
+2025-01-03 11:58:06,084 - INFO - Found 5 CSV files: StkList_20241231_235317.csv, StkList_20241230_163432.csv, StkList_20241227_164920.csv, StkList_20241227_092229.csv, StkList_20241226_215427.csv
+2025-01-03 11:58:06,085 - INFO - Keeping newest files: StkList_20241231_235317.csv, StkList_20241230_163432.csv
+2025-01-03 11:58:06,085 - INFO - Removed old CSV file: StkList_20241227_164920.csv
+2025-01-03 11:58:06,086 - INFO - Removed old CSV file: StkList_20241227_092229.csv
+2025-01-03 11:58:06,086 - INFO - Removed old CSV file: StkList_20241226_215427.csv
+2025-01-03 11:58:06,100 - INFO - Found 8 month tables: Dec31, Dec30, Dec27, Dec26, Dec25, Dec24, Dec23, Jan01
+2025-01-03 11:58:06,100 - INFO - Keeping newest tables: Dec31, Dec30, Dec27, Dec26
+2025-01-03 11:58:06,113 - INFO - Dropped old table: Dec25
+2025-01-03 11:58:06,120 - INFO - Dropped old table: Dec24
+2025-01-03 11:58:06,127 - INFO - Dropped old table: Dec23
+2025-01-03 11:58:06,130 - INFO - Dropped old table: Jan01
+2025-01-03 11:58:06,130 - INFO - Clean-up completed successfully
+2025-01-14 17:57:48,422 - INFO - Found 10 CSV files: StkList_20250114_175416.csv, StkList_20250113_203656.csv, StkList_20250110_214331.csv, StkList_20250109_220701.csv, StkList_20250108_164036.csv, StkList_20250107_203920.csv, StkList_20250106_154812.csv, StkList_20250103_162957.csv, StkList_20241231_235317.csv, StkList_20241230_163432.csv
+2025-01-14 17:57:48,422 - INFO - Keeping newest files: StkList_20250114_175416.csv, StkList_20250113_203656.csv
+2025-01-14 17:57:48,423 - INFO - Removed old CSV file: StkList_20250110_214331.csv
+2025-01-14 17:57:48,423 - INFO - Removed old CSV file: StkList_20250109_220701.csv
+2025-01-14 17:57:48,424 - INFO - Removed old CSV file: StkList_20250108_164036.csv
+2025-01-14 17:57:48,424 - INFO - Removed old CSV file: StkList_20250107_203920.csv
+2025-01-14 17:57:48,424 - INFO - Removed old CSV file: StkList_20250106_154812.csv
+2025-01-14 17:57:48,425 - INFO - Removed old CSV file: StkList_20250103_162957.csv
+2025-01-14 17:57:48,426 - INFO - Removed old CSV file: StkList_20241231_235317.csv
+2025-01-14 17:57:48,428 - INFO - Removed old CSV file: StkList_20241230_163432.csv
+2025-01-14 17:57:48,441 - INFO - Found 13 month tables: Dec31, Dec30, Dec27, Jan14, Jan13, Jan10, Jan09, Jan08, Jan07, Jan06, Jan03, Jan02, Jan01
+2025-01-14 17:57:48,441 - INFO - Keeping newest tables: Dec31, Dec30, Dec27, Jan14
+2025-01-14 17:57:48,452 - INFO - Dropped old table: Jan13
+2025-01-14 17:57:48,462 - INFO - Dropped old table: Jan10
+2025-01-14 17:57:48,466 - INFO - Dropped old table: Jan09
+2025-01-14 17:57:48,473 - INFO - Dropped old table: Jan08
+2025-01-14 17:57:48,477 - INFO - Dropped old table: Jan07
+2025-01-14 17:57:48,481 - INFO - Dropped old table: Jan06
+2025-01-14 17:57:48,484 - INFO - Dropped old table: Jan03
+2025-01-14 17:57:48,487 - INFO - Dropped old table: Jan02
+2025-01-14 17:57:48,489 - INFO - Dropped old table: Jan01
+2025-01-14 17:57:48,489 - INFO - Clean-up completed successfully
+2025-01-23 13:14:23,535 - INFO - Found 3 CSV files: StkList_20250122_153834.csv, StkList_20250121_201315.csv, StkList_20250120_213736.csv
+2025-01-23 13:14:23,536 - INFO - Keeping newest files: StkList_20250122_153834.csv, StkList_20250121_201315.csv
+2025-01-23 13:14:23,536 - INFO - Removed old CSV file: StkList_20250120_213736.csv
+2025-01-23 13:14:23,546 - INFO - Found 7 month tables: Jan22, Jan21, Jan20, Jan17, Jan16, Jan15, Jan14
+2025-01-23 13:14:23,547 - INFO - Keeping newest tables: Jan22, Jan21, Jan20, Jan17
+2025-01-23 13:14:23,560 - INFO - Dropped old table: Jan16
+2025-01-23 13:14:23,565 - INFO - Dropped old table: Jan15
+2025-01-23 13:14:23,569 - INFO - Dropped old table: Jan14
+2025-01-23 13:14:23,569 - INFO - Clean-up completed successfully

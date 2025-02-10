@@ -1,0 +1,97 @@
+{
+    "DEBUG": false,
+    "Programs": {
+        "Filter1": {
+            "DEBUG": false
+        },
+        "Filter2": {
+            "DEBUG": false
+        },
+        "Filter3": {
+            "DEBUG": false
+        },
+        "Filter5": {
+            "DEBUG": false,
+            "filters": {
+                "rise_check": {
+                    "enabled": true,
+                    "threshold": 10
+                },
+                "low_price_check": {
+                    "enabled": true
+                }
+            }
+        },
+        "QA007": {
+            "DEBUG": false
+        },
+        "QA008": {
+            "DEBUG": false
+        },
+        "Init_Gap": {
+            "DEBUG": false
+        },
+        "Week_K_Analyzer": {
+            "DEBUG": false
+        },
+        "Triangle_Analyzer": {
+            "DEBUG": false
+        }
+    },
+    "DBConnection": {
+        "host": "localhost",
+        "user": "root",
+        "password": "12345678",
+        "database": "StkFilterQA"
+    },
+    "DB_tables": {
+        "daily_update_table": "Feb10",
+        "table_to_update_flag": "StockMain",
+        "main_query_table": "StockMain",
+        "buffer_table": "buffer",
+        "gap_table": "Gap",
+        "table_for_2day_deviation_compare": "deviation",
+        "FilterHistory": "filter_history",
+        "WK_table": "WK",
+        "filter_results": "FilterResults"
+    },
+    "DBinput": {
+        "last_update_date": "2025-02-10"
+    },
+    "ProgormInput": {
+        "massive_insrt_start_date": "20250208",
+        "massive_insrt_end_date": "20250210",
+        "compare_base_date": "2024-11-27",
+        "compare_other_date": "2024-11-26",
+        "missed_ones_start_date": "20250102",
+        "missed_ones_end_date": "20250102",
+        "weekly_start_date": "20230101",
+        "weekly_end_date": "20241227"
+    },
+    "MA_config": {
+        "ma1": 7,
+        "ma2": 30,
+        "ma3": 60,
+        "ma4": 120,
+        "ma5": 250,
+        "ma_table": "MA",
+        "ma_batch_size": 2000,
+        "ma_source_csv": "CSVs/Filter0Out.csv"
+    },
+    "CSVs": {
+        "MainCSV": "CSVs/StkList_AK.csv",
+        "MissedOnes": "CSVs/FillMiss.csv",
+        "Filters": {
+            "Input": "CSVs/Filter0Out.csv",
+            "Filter1": "CSVs/Filter1Out.csv",
+            "Filter2": "CSVs/Filter2Out.csv",
+            "Filter3": "CSVs/Filter3Out.csv",
+            "Filter4": "CSVs/Filter4Out.csv",
+            "Filter5": "CSVs/Filter5Out.csv",
+            "FinalOutput": "CSVs/FinalOut.csv"
+        }
+    },
+    "Log": {
+        "log_path": "QA/Logs"
+    }
+}

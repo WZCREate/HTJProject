@@ -1,0 +1,14 @@
+2024-12-29 13:08:33,198 - INFO - PROD: PROD: 开始执行数据导入程序...
+2024-12-29 13:08:33,266 - INFO - PROD: PROD: 成功清空表 buffer
+2024-12-29 13:08:33,266 - ERROR - PROD: PROD: 程序执行出错: [Errno 2] No such file or directory: '/Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/StkList_test.csv'
+2024-12-29 13:09:34,111 - INFO - PROD: PROD: 开始执行数据导入程序...
+2024-12-29 13:09:34,140 - INFO - PROD: PROD: 成功清空表 buffer
+2024-12-29 13:09:34,144 - INFO - PROD: PROD: 成功读取股票列表，共 100 只股票
+2024-12-29 13:09:34,144 - INFO - PROD: PROD: 数据获取时间范围: 20241214 至 20241218
+2024-12-29 13:09:36,683 - WARNING - PROD: PROD: 股票 002743 在指定时间范围内无数据
+2024-12-29 13:09:36,684 - WARNING - PROD: PROD: 股票 002743 在指定时间范围内无数据
+2024-12-29 13:09:36,831 - WARNING - PROD: PROD: 股票 603958 在指定时间范围内无数据
+2024-12-29 13:09:36,831 - WARNING - PROD: PROD: 股票 603958 在指定时间范围内无数据
+2024-12-29 13:09:37,783 - WARNING - PROD: PROD: 无数据股票: 002743, 603958
+2024-12-29 13:09:37,783 - INFO - PROD: PROD: 所有数据处理完成 | 总体数据获取成功率: 98.0% | 数据写入成功率: 98.0% | 无数据股票数量: 2
+2024-12-29 13:09:37,783 - INFO - PROD: PROD: 程序执行完成

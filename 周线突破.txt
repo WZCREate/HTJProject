@@ -1,0 +1,60 @@
+将整个蜡烛图看作坐标系, 周为横轴, 股票价格为纵轴. x方向, 向左为负, 向右为正. 一周为一个单位. y方向, 以‘base周’的开盘价为y=0, 向上为正, 向下为负.
+将程序运行日期所在周计作’base周‘, ‘base周’的x坐标则为0. 因为分析的是历史数据, 因此‘base周’之前的所有周横坐标都为负.
+1. 判断‘base’周的涨幅是否大于等于 2.8%, 过滤掉所有涨幅小于 2.8% 的股票.
+2. 以‘base’周为起点, 计算包含‘base’周在内的过往80周的 上影线 范围. 上影线的计算方法:
+   上影线的上端点: 该周的最高价(即数据库中取得的数据中‘high’对应的值)
+   若该周的收盘价大于等于开盘价, 则上影线的下端点为该周的收盘价.
+   若该周的收盘价小于开盘价, 则上影线的下端点为该周的开盘价.
+3. 统计每一周的最高价, 寻找所有波峰. 波峰计算可以使用scipy.signal 的 find_peaks 函数. prominence设为0.01.
+4. 找到第一个波峰,即最左侧波峰所在的周计作‘boundary周’. ‘boundary周’的波峰计作‘peak<n>’. 其中 n 的值即为boundary周与base周之间的波峰数量. 最靠近‘base周’的第一个波峰, 该波峰计作’peak1‘. 
+5. 判断与base周相邻的第一个周的增长率如果为正, 则这个相邻周的影线即使不是一个波峰, 也算作一个伪波峰. 这个伪波峰计作’peak0‘. 如果该相邻周的增长率<=0, 则被计算股票没有伪波峰.
+   所带待分析的数据都介于‘base周’和‘boundary周’之间, 包含这两个周. 该范围的数学表达是: [boundary周, base周]. 早于‘boundary周’的数据(周数小于boundary周)不需要纳入计算, 以节省内存.
+
+开始根据波峰定点画线. 如果有伪波峰, 则进行如下判断:
+6. 比较伪波峰peak0的影线最大值与 peak1 实体最大值的大小. 如果伪波峰peak0的影线最大值大于 peak1 实体最高点, 则认为伪波峰有效, 保留peak0. 否则认为伪波峰无效, 没有peak0.
+此时后面的逻辑分为两种情况:
+
+case1: 没有peak0, 以‘peak1’所在周作为‘line_start_week’开始定点画线. 相应的, 开始画线的波峰所对应的影线计作‘line_start_shadow’.
+7. 为了做出一条直线, 除了‘line_start_shadow’之外, 还需要一个‘line_end_shadow’. 
+   ‘line_end_shadow’从‘peak<n>’开始, 向右逐周计算, 一直到找到‘line_start_shadow‘所在波峰的相邻波峰为止.
+   case1 中没有peak0, 所以‘line_end_shadow’在[‘peak<n>’, ‘peak2’]之间, 闭区间.或者说 ‘line_end_week’的范围是[‘peak<n>’, ‘peak2’]
+   ‘line_end_shadow’所在的周数计作‘line_end_week’.
+8. 'line_start_shadow' 和 'line_end_shadow' 在y方向上是两个价格区间, ‘line_start_point’和‘line_end_point’分别是是这两个区间内的点. 
+   其中‘line_start_point’在‘line_start_shadow’的区间内. ‘line_end_point’在‘line_end_shadow’的区间内.
+9. 由于一条直线上有无数个点, 因此需要对‘line_start_shadow’和‘line_end_shadow’进行分段. 分段的方法是:
+   比较‘line_start_shadow’和‘line_end_shadow’的区间长度. 无论‘line_start_shadow’和‘line_end_shadow’哪个更长:
+   若是较长的影线和较短的影线之比<3, 则将两个影线都进行四等分. 此时, 潜在的‘line_start_point’和‘line_end_point’的个数都为5. 但是影线最低点, 不作为‘line_start_point’和‘line_end_point’, 因此此时潜在的‘line_start_point’和‘line_end_point’的个数都为4.
+   若是 4>较长的影线和较短的影线之比>=3, 则将短影线进行四等分, 长影线进行八等分. 此时, 排除掉影线最低点, 潜在的‘line_start_point’和‘line_end_point’的个数则分别为4和8.
+   若是 较长的影线和较短的影线之比>=4, 则将短影线进行五等分, 长影线进行十等分. 此时, 排除掉影线最低点, 潜在的‘line_start_point’和‘line_end_point’的个数则分别为5和10.
+10. 潜在的‘line_start_point’和‘line_end_point’确定完之后, 存在多种连线方案. 假设有i个‘line_start_point’,由大到小分别计作‘line_start_point1’~‘line_start_point<i>’, 有j个‘line_end_point’,分别计作‘line_end_point1’~‘line_end_point<j>’. 
+    在‘line_start_shadow’中, 先选择最上方的点‘line_start_point1’作为‘line_start_point’, 此时‘line_start_point’固定不动.
+    ‘line_start_point’固定后, 在‘line_end_shadow’中, 自上而下使用潜在的‘line_end_point’点作为终点, 从‘line_end_point1’开始, 直到‘line_end_point<j>’为止.
+    此时便可确定一条 ax+b=y 的直线. 进行直线有效性判断.
+
+    条件一: 计算这条直线在‘base周’(x=0)的值b, 比较 b 和 ‘base周’的收盘价. 如果 b<收盘价, 则满足条件.否则不满足.
+    条件二: 这条连线没有穿过 ‘line_start_week’ 和 ‘line_end_week’ 之间的任何蜡烛实体. 如果穿过蜡烛实体, 则不满足条件. 否则满足条件. 蜡烛实体是指该周的[收盘价, 开盘价]或者[开盘价, 收盘价]这个区间.
+
+    11.1 当条件一和条件二任意一个不满足时, 在‘line_end_shadow上不再需要计算其余潜在的‘line_end_point’. 
+         此时‘line_end_week’的值加一, 以下一周的影线作为‘line_end_shadow’, 在新的‘line_end_shadow’上, 再次自上而下使用潜在的‘line_end_point’与‘line_start_point1’连线, 进行直线有效性判断. 直到到达‘line_end_week’的边界为止.
+
+    在以上过程中, 如果一条直线条件一和条件二都满足, 则判断条件三.
+
+    条件三: 计算这条直线在‘line_start_point’和‘line_end_point’之间是否穿过任何其它影线. 如果穿过的额外影线数量>=1, 则满足条件. 该直线视为有效. 反之, 不满足条件.
+
+    11.3 找到有效直线后, 本周‘line_end_shadow’上后续的潜在‘line_end_point’不再需要计算. 
+         此时‘line_end_week’的值加一, 以下一周的影线作为‘line_end_shadow’, 在新的‘line_end_shadow’上, 自上而下使用潜在的‘line_end_point’与‘line_start_point1’连线, 进行条件一和条件二的判断. (与11.1相同)
+    11.4 如果条件三不满足, 则下移‘line_end_point’, 再次与‘line_start_point1’连线, 进行条件一和条件二的判断. 
+
+   如此嵌套循环, 外层循环是从左到右遍历每一个‘line_end_shadow’, 内层循环是遍历‘line_end_shadow’上的每一个潜在的‘line_end_point’.
+
+    三个条件都满足, 则认为该直线有效. 记录所有满足条件的直线. 
+
+12. 以上循环结束后, 如果没有找到任何有效直线, 则将‘line_start_point’下移, 重复上述步骤.
+
+当所有组合都判断完, 记录所有满足三个条件的直线, 如果有效直线数量>=1, 则认为该股票实现周线突破, 符合预期. 如果有效直线数量为0, 则该股票没有实现周线突破, 不符合预期.
+
+
+case2: 有peak0.
+第一步: 执行与case1完全相同的操作. 以‘peak1’所在周作为‘line_start_week’, 执行与case1相同的判断操作. (忽略peak0)
+第二部额外操作, 第一步执行完之后,以‘peak0’所在周作为‘line_start_week’, 执行与case1相同的判断操作, 唯一的不同是, ‘line_end_week’的范围变成了[‘peak<n>’, ‘peak1’]
+

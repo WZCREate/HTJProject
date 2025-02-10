@@ -1,0 +1,104 @@
+StkFilterQA.buffer:
+CREATE TABLE `buffer` (
+  `date` date DEFAULT NULL,
+  `id` varchar(10) DEFAULT NULL,
+  `open_price` decimal(10,2) DEFAULT NULL,
+  `close_price` decimal(10,2) DEFAULT NULL,
+  `high` decimal(10,2) DEFAULT NULL,
+  `low` decimal(10,2) DEFAULT NULL,
+  `volume` bigint DEFAULT NULL,
+  `turnover` decimal(15,2) DEFAULT NULL,
+  `amplitude` decimal(6,2) DEFAULT NULL,
+  `chg_percen` decimal(6,2) DEFAULT NULL,
+  `chg_amount` decimal(10,2) DEFAULT NULL,
+  `turnover_rate` decimal(5,2) DEFAULT NULL,
+  `Insrt_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `Latest` tinyint DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+StkFilterQA.Gap:
+CREATE TABLE `Gap` (
+  `id` varchar(10) DEFAULT NULL,
+  `sdate` date DEFAULT NULL,
+  `filled` tinyint(1) DEFAULT NULL,
+  `edate` date DEFAULT NULL,
+  `from_price` decimal(10,2) DEFAULT NULL,
+  `to_price` decimal(10,2) DEFAULT NULL,
+  `gap_update_time` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+StkFilterQA.deviation:
+CREATE TABLE `deviation` (
+  `date` date DEFAULT NULL,
+  `id` varchar(10) DEFAULT NULL,
+  `open_price` decimal(10,2) DEFAULT NULL,
+  `close_price` decimal(10,2) DEFAULT NULL,
+  `high` decimal(10,2) DEFAULT NULL,
+  `low` decimal(10,2) DEFAULT NULL,
+  `volume` bigint DEFAULT NULL,
+  `turnover` decimal(15,2) DEFAULT NULL,
+  `amplitude` decimal(6,2) DEFAULT NULL,
+  `chg_percen` decimal(6,2) DEFAULT NULL,
+  `chg_amount` decimal(10,2) DEFAULT NULL,
+  `turnover_rate` decimal(5,2) DEFAULT NULL,
+  `Insrt_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `Latest` tinyint DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+StkFilterQA.filter_history:
+CREATE TABLE `filter_history` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `filter_name` varchar(50) NOT NULL,
+  `source_file` varchar(100) DEFAULT NULL,
+  `output_file` varchar(100) DEFAULT NULL,
+  `input_count` int NOT NULL,
+  `output_count` int NOT NULL,
+  `reduction` int NOT NULL,
+  `reduction_rate` decimal(5,2) NOT NULL,
+  `run_date` datetime NOT NULL,
+  `details` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+StkFilterQA.MA:
+CREATE TABLE `MA` (
+  `date` date DEFAULT NULL,
+  `id` varchar(10) DEFAULT NULL,
+  `MA7` decimal(10,2) DEFAULT NULL,
+  `MA30` decimal(10,2) DEFAULT NULL,
+  `MA60` decimal(10,2) DEFAULT NULL,
+  `MA120` decimal(10,2) DEFAULT NULL,
+  `MA250` decimal(10,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+StkFilterQA.StockMain:
+CREATE TABLE `StockMain` (
+  `date` date DEFAULT NULL,
+  `id` varchar(10) DEFAULT NULL,
+  `open_price` decimal(10,2) DEFAULT NULL,
+  `close_price` decimal(10,2) DEFAULT NULL,
+  `high` decimal(10,2) DEFAULT NULL,
+  `low` decimal(10,2) DEFAULT NULL,
+  `volume` bigint DEFAULT NULL,
+  `turnover` decimal(15,2) DEFAULT NULL,
+  `amplitude` decimal(10,2) DEFAULT NULL,
+  `chg_percen` decimal(10,2) DEFAULT NULL,
+  `chg_amount` decimal(10,2) DEFAULT NULL,
+  `turnover_rate` decimal(5,2) DEFAULT NULL,
+  `Insrt_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `Latest` tinyint DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+StkFilterQA.WK:
+CREATE TABLE `WK` (
+  `id` varchar(6) NOT NULL COMMENT '股票代码',
+  `wkn` varchar(6) NOT NULL COMMENT '周数',
+  `WK_date` date DEFAULT NULL COMMENT '周数对应的日期',
+  `open` decimal(10,2) DEFAULT NULL COMMENT '开盘价',
+  `close` decimal(10,2) DEFAULT NULL COMMENT '收盘价',
+  `high` decimal(10,2) DEFAULT NULL COMMENT '最高价',
+  `low` decimal(10,2) DEFAULT NULL COMMENT '最低价',
+  `update_time` timestamp NULL DEFAULT NULL COMMENT '更新时间',
+  `status` varchar(10) DEFAULT 'active' COMMENT '股票状态：active-正常，st-退市或无数据',
+  PRIMARY KEY (`id`,`wkn`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='股票周K线数据';

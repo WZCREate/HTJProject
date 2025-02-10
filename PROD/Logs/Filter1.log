@@ -1,0 +1,165 @@
+2024-12-22 08:37:15,116 - INFO - 过滤结果已保存: PRODFilter1, 输入:4905, 输出:4777
+2024-12-22 08:37:15,122 - INFO - QA: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-22 08:46:19,111 - INFO - PROD: 成功读取 4905 个股票代码
+2024-12-22 08:46:26,323 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-22 08:46:26,362 - INFO - 过滤结果已保存: PRODFilter1, 输入:4905, 输出:4777
+2024-12-22 08:46:26,369 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-22 09:09:00,317 - INFO - PROD: 成功读取 4905 个股票代码
+2024-12-22 09:09:07,262 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-22 09:09:07,286 - INFO - 过滤结果已保存: PRODFilter1, 输入:4905, 输出:4777
+2024-12-22 09:09:07,292 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-22 09:15:16,465 - INFO - PROD: 成功读取 4905 个股票代码
+2024-12-22 09:15:23,632 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-22 09:15:23,658 - INFO - 过滤结果已保存: Filter1, 输入:4905, 输出:4777
+2024-12-22 09:15:23,664 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-24 08:57:36,055 - INFO - PROD: 成功读取 4972 个股票代码
+2024-12-24 08:57:43,262 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-24 08:57:43,304 - INFO - 过滤结果已保存: Filter1, 输入:4972, 输出:4911
+2024-12-24 08:57:43,315 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-24 08:59:25,842 - INFO - PROD: 成功读取 4972 个股票代码
+2024-12-24 08:59:33,091 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-24 08:59:33,119 - INFO - 过滤结果已保存: Filter1, 输入:4972, 输出:4911
+2024-12-24 08:59:33,124 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-24 22:00:18,695 - INFO - PROD: 成功读取 4929 个股票代码
+2024-12-24 22:00:29,279 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-24 22:00:29,357 - INFO - 过滤结果已保存: Filter1, 输入:4929, 输出:4863
+2024-12-24 22:00:29,365 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-25 16:03:46,025 - INFO - PROD: 成功读取 4980 个股票代码
+2024-12-25 16:03:56,742 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-25 16:03:56,820 - INFO - PROD: 过滤结果已保存到数据库
+2024-12-25 16:03:56,827 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-26 21:59:53,067 - INFO - PROD: 成功读取 4911 个股票代码
+2024-12-26 22:00:03,768 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-26 22:00:03,863 - INFO - PROD: 过滤结果已保存到数据库
+2024-12-26 22:00:03,869 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-27 07:25:39,863 - INFO - PROD: 成功读取 4911 个股票代码
+2024-12-27 07:25:51,371 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-27 07:25:51,471 - INFO - PROD: 过滤结果已保存到数据库
+2024-12-27 07:25:51,477 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-27 07:26:42,704 - INFO - PROD: 成功读取 4911 个股票代码
+2024-12-27 07:26:54,020 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-27 07:26:54,024 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2024-12-27 07:26:54,105 - INFO - PROD: 过滤结果已保存到数据库
+2024-12-27 07:26:54,111 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-27 16:50:19,432 - INFO - PROD: 成功读取 4941 个股票代码
+2024-12-27 16:50:31,142 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-27 16:50:31,146 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2024-12-27 16:50:31,256 - INFO - PROD: 过滤结果已保存到数据库
+2024-12-27 16:50:31,260 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-30 16:35:29,115 - INFO - PROD: 成功读取 4961 个股票代码
+2024-12-30 16:35:40,617 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-30 16:35:40,622 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2024-12-30 16:35:40,738 - INFO - PROD: 过滤结果已保存到数据库
+2024-12-30 16:35:40,743 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2024-12-31 23:54:18,675 - INFO - PROD: 成功读取 4963 个股票代码
+2024-12-31 23:54:30,052 - INFO - PROD: 成功获取并处理涨幅数据
+2024-12-31 23:54:30,056 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2024-12-31 23:54:30,145 - INFO - PROD: 过滤结果已保存到数据库
+2024-12-31 23:54:30,149 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-03 16:31:04,249 - INFO - PROD: 成功读取 4967 个股票代码
+2025-01-03 16:31:16,324 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-03 16:31:16,333 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-03 16:31:16,434 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-03 16:31:16,439 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-06 15:49:26,752 - INFO - PROD: 成功读取 4955 个股票代码
+2025-01-06 15:49:38,517 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-06 15:49:38,521 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-06 15:49:38,615 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-06 15:49:38,619 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-07 20:40:29,886 - INFO - PROD: 成功读取 4906 个股票代码
+2025-01-07 20:40:41,540 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-07 20:40:41,545 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-07 20:40:41,632 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-07 20:40:41,636 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-08 16:41:40,023 - INFO - PROD: 成功读取 4947 个股票代码
+2025-01-08 16:41:52,057 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-08 16:41:52,061 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-08 16:41:52,156 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-08 16:41:52,160 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-09 22:08:05,372 - INFO - PROD: 成功读取 4939 个股票代码
+2025-01-09 22:08:16,865 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-09 22:08:16,869 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-09 22:08:16,912 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-09 22:08:16,918 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-10 21:44:36,643 - INFO - PROD: 成功读取 4967 个股票代码
+2025-01-10 21:44:48,443 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-10 21:44:48,446 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-10 21:44:48,516 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-10 21:44:48,522 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-13 20:38:00,286 - INFO - PROD: 成功读取 4958 个股票代码
+2025-01-13 20:38:11,936 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-13 20:38:11,940 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-13 20:38:12,185 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-13 20:38:12,202 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-14 17:55:25,625 - INFO - PROD: 成功读取 4842 个股票代码
+2025-01-14 17:55:38,614 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-14 17:55:38,619 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-14 17:55:38,727 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-14 17:55:38,731 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-15 21:17:03,785 - INFO - PROD: 成功读取 4960 个股票代码
+2025-01-15 21:17:15,537 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-15 21:17:15,541 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-15 21:17:15,650 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-15 21:17:15,655 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-16 19:10:51,126 - INFO - PROD: 成功读取 4946 个股票代码
+2025-01-16 19:11:02,822 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-16 19:11:02,824 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-16 19:11:02,861 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-16 19:11:02,865 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-17 20:13:48,964 - INFO - PROD: 成功读取 4959 个股票代码
+2025-01-17 20:14:00,898 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-17 20:14:00,902 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-17 20:14:00,991 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-17 20:14:01,005 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-20 16:40:01,106 - INFO - PROD: 成功读取 4950 个股票代码
+2025-01-20 16:40:12,976 - INFO - PROD: 成功获取并处理涨幅数据
+2025-01-20 16:40:12,981 - INFO - PROD: Debug信息已保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/debug_filter1.csv
+2025-01-20 16:40:13,044 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-20 16:40:13,048 - INFO - PROD: 已将过滤后的股票保存至 /Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter1Out.csv
+2025-01-20 22:25:39,774 - INFO - PROD: 成功读取 4950 个股票代码
+2025-01-20 22:25:43,304 - INFO - PROD: 过滤结果已保存到数据库
+2025-01-20 22:25:43,311 - INFO - PROD: 过滤结果已保存到数据库, 总耗时: 3.54 秒
+2025-01-20 22:25:43,311 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-01-21 20:14:31,211 - INFO - PROD: 成功读取 4957 个股票代码
+2025-01-21 20:14:33,228 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 2.02 秒
+2025-01-21 20:14:33,228 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-01-22 15:39:49,247 - INFO - PROD: 成功读取 4975 个股票代码
+2025-01-22 15:39:51,313 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 2.06 秒
+2025-01-22 15:39:51,313 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-01-22 16:06:56,673 - INFO - PROD: 成功读取 4887 个股票代码
+2025-01-22 16:06:58,693 - INFO - PROD: 已在 'Filter0Out.csv 中标注被过滤股票
+2025-01-22 16:06:58,693 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 2.02 秒
+2025-01-22 16:06:58,693 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-01-22 16:07:46,806 - ERROR - PROD: 读取股票代码文件失败: [Errno 2] No such file or directory: '/Users/wuzhong/LocalFile/StockFilter/PROD/CSVs/Filter0Out.csv'
+2025-01-22 16:08:21,156 - INFO - PROD: 成功读取 4887 个股票代码
+2025-01-22 16:08:23,119 - INFO - PROD: 已在 Filter0Out.csv 中标注被过滤股票
+2025-01-22 16:08:23,119 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 1.96 秒
+2025-01-22 16:08:23,119 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-01-23 16:14:14,712 - INFO - PROD: 成功读取 4893 个股票代码
+2025-01-23 16:14:16,924 - INFO - PROD: 已在 Filter0Out.csv 中标注被过滤股票
+2025-01-23 16:14:16,924 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 2.21 秒
+2025-01-23 16:14:16,924 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-01-24 16:08:06,612 - INFO - PROD: 成功读取 4842 个股票代码
+2025-01-24 16:08:08,634 - INFO - PROD: 已在 Filter0Out.csv 中标注被过滤股票
+2025-01-24 16:08:08,634 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 2.02 秒
+2025-01-24 16:08:08,634 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-01-28 07:35:27,481 - INFO - PROD: 成功读取 4889 个股票代码
+2025-01-28 07:35:29,760 - INFO - PROD: 已在 Filter0Out.csv 中标注被过滤股票
+2025-01-28 07:35:29,760 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 2.28 秒
+2025-01-28 07:35:29,760 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-02-05 22:26:55,263 - INFO - PROD: 成功读取 4842 个股票代码
+2025-02-05 22:26:57,086 - INFO - PROD: 已在 Filter0Out.csv 中标注被过滤股票
+2025-02-05 22:26:57,086 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 1.82 秒
+2025-02-05 22:26:57,086 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-02-06 22:15:24,855 - INFO - PROD: 成功读取 4822 个股票代码
+2025-02-06 22:15:26,770 - INFO - PROD: 已在 Filter0Out.csv 中标注被过滤股票
+2025-02-06 22:15:26,770 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 1.91 秒
+2025-02-06 22:15:26,770 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-02-07 22:57:41,492 - INFO - PROD: 成功读取 4843 个股票代码
+2025-02-07 22:57:43,366 - INFO - PROD: 已在 Filter0Out.csv 中标注被过滤股票
+2025-02-07 22:57:43,366 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 1.87 秒
+2025-02-07 22:57:43,366 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv
+2025-02-10 16:40:13,740 - INFO - PROD: 成功读取 4801 个股票代码
+2025-02-10 16:40:15,681 - INFO - PROD: 已在 Filter0Out.csv 中标注被过滤股票
+2025-02-10 16:40:15,681 - INFO - PROD: 过滤信息已保存到数据库, 总耗时: 1.93 秒
+2025-02-10 16:40:15,681 - INFO - PROD: 已将过滤后的股票保存至 Filter1Out.csv

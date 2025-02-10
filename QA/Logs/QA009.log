@@ -1,0 +1,8 @@
+2024-12-28 10:18:52,612 - INFO - 开始处理周K数据
+2024-12-28 10:18:52,715 - INFO - 成功创建/确认周数据表存在
+2024-12-28 10:18:52,716 - ERROR - 读取股票代码失败: [Errno 2] No such file or directory: 'CSVs/StkList_AK.csv'
+2024-12-28 10:18:52,716 - ERROR - 程序执行失败: [Errno 2] No such file or directory: 'CSVs/StkList_AK.csv'
+2024-12-28 10:20:26,609 - INFO - 开始处理周K数据
+2024-12-28 10:20:26,643 - INFO - 成功创建/确认周数据表存在
+2024-12-28 10:20:26,643 - ERROR - 读取股票代码失败: [Errno 2] No such file or directory: 'CSVs/StkList_AK.csv'
+2024-12-28 10:20:26,643 - ERROR - 程序执行失败: [Errno 2] No such file or directory: 'CSVs/StkList_AK.csv'

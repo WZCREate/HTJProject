@@ -1,0 +1,74 @@
+2024-12-28 09:31:41,694 - ERROR - 程序执行出错: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv'
+2024-12-28 09:32:42,107 - ERROR - 程序执行出错: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv'
+2024-12-28 09:33:47,897 - INFO - QA: 开始执行周K数据获取程序...
+2024-12-28 09:33:47,897 - INFO - QA: 尝试读取股票代码文件: /Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv
+2024-12-28 09:33:47,897 - ERROR - QA: 程序执行出错: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv'
+2024-12-28 09:33:47,899 - ERROR - QA: 详细错误信息: Traceback (most recent call last):
+  File "/Users/wuzhong/LocalFile/StockFilter/QA/Programs/QA008.py", line 169, in main
+    stock_codes_df = pd.read_csv(csv_path, encoding="utf-8")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv'
+
+2024-12-28 10:07:28,332 - INFO - 开始执行周K数据获取程序...
+2024-12-28 10:07:28,332 - INFO - 尝试读取股票代码文件: /Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv
+2024-12-28 10:07:28,332 - ERROR - 程序执行出错: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv'
+2024-12-28 10:07:28,335 - ERROR - 详细错误信息: Traceback (most recent call last):
+  File "/Users/wuzhong/LocalFile/StockFilter/QA/Programs/QA008.py", line 161, in main
+    stock_codes_df = pd.read_csv(csv_path, encoding="utf-8")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv'
+
+2024-12-28 10:08:03,170 - INFO - 开始执行周K数据获取程序...
+2024-12-28 10:08:03,170 - INFO - 尝试读取股票代码文件: /Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv
+2024-12-28 10:08:03,170 - ERROR - 程序执行出错: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv'
+2024-12-28 10:08:03,172 - ERROR - 详细错误信息: Traceback (most recent call last):
+  File "/Users/wuzhong/LocalFile/StockFilter/QA/Programs/QA008.py", line 161, in main
+    stock_codes_df = pd.read_csv(csv_path, encoding="utf-8")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/opt/anaconda3/envs/StkFilter/lib/python3.12/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: '/Users/wuzhong/LocalFile/StockFilter/QA/config.json/QA/CSVs/StkList_AK.csv'
+

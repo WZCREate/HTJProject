@@ -1,0 +1,5 @@
+setup.py
+StockFilter.egg-info/PKG-INFO
+StockFilter.egg-info/SOURCES.txt
+StockFilter.egg-info/dependency_links.txt
+StockFilter.egg-info/top_level.txt
