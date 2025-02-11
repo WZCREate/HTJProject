@@ -107,14 +107,14 @@ def process_batch_mode(stock_list, threshold, debug=False):
                 stocks_with_lines.append(stock_id)
     
     process_time = time.time() - process_start
-    logger.info_print(f"\n处理完成，耗时: {process_time:.2f} 秒")
+    logger.info_print(f"\n处理完成, 耗时: {process_time:.2f} 秒")
     
     # 只显示最终结果的统计
     logger.info_print(f"发现 {len(stocks_with_lines)} 只股票存在有效阻力线形态 "
           f"({len(stocks_with_lines)/total_stocks*100:.1f}%)")
     
     if stocks_with_lines:
-        logger.info_print("存在阻力线形态的股票:\n " + ", ".join(stocks_with_lines))
+        logger.info_print("周线突破的股票:\n " + ", ".join(stocks_with_lines))
     
     return stocks_with_lines, process_time
 
