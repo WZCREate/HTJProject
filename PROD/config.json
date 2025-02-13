@@ -27,7 +27,7 @@
         "database": "StkFilterPROD"
     },
     "DB_tables": {
-        "daily_update_table": "Feb10",
+        "daily_update_table": "Feb12",
         "table_to_update_flag": "StockMain",
         "main_query_table": "StockMain",
         "buffer_table": "buffer",
@@ -37,7 +37,7 @@
         "WK_table": "WK"
     },
     "DBinput": {
-        "last_update_date": "2025-02-10"
+        "last_update_date": "2025-02-12"
     },
     "ProgormInput": {
         "massive_insrt_start_date": "20241214",
