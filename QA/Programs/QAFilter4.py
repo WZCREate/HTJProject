@@ -253,7 +253,7 @@ def main():
                 if not update_filter_results(cursor, filter_results_table, processing_date, 
                                           filtered_out_stocks, logger, args.debug):
                     logger.error_print("更新过滤结果失败")
-                    return
+                    return False  # 更新失败时返回False
                 
                 # 保存过滤结果到数据库
                 details = "分析股票的阻力线形态，识别具有潜在突破机会的股票"
@@ -280,6 +280,8 @@ def main():
                 if args.debug:
                     logger.debug(f"图形绘制耗时: {plot_time:.2f} 秒")
                 
+                return True  # 成功执行时返回True
+                
             finally:
                 connection.close()
             
@@ -291,6 +293,7 @@ def main():
         logger.error_print(f"程序执行失败: {str(e)}")
         logger.error_print("详细错误信息:")
         logger.error_print(traceback.format_exc())
+        return False  # 发生异常时返回False
 
 if __name__ == "__main__":
     main()
