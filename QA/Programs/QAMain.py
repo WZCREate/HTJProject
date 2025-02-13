@@ -17,6 +17,9 @@ from QA008 import main as qa008_main
 from QAFilter1 import main as qafilter1_main
 from QAFilter2 import main as qafilter2_main
 from QAFilter3 import main as qafilter3_main
+from QAFilter4 import main as qafilter4_main
+from QAFilter5 import main as qafilter5_main
+from OutputTargets import main as output_targets_to_csv
 from CommonFunc.DBconnection import find_config_path, load_config, set_log
 
 def execute_qa_sequence():
@@ -56,7 +59,9 @@ def excute_filters():
     filters = [
         (qafilter1_main, "QAFilter1"),
         (qafilter2_main, "QAFilter2"),
-        (qafilter3_main, "QAFilter3")
+        (qafilter3_main, "QAFilter3"),
+        (qafilter4_main, "QAFilter4"),
+        (qafilter5_main, "QAFilter5")
     ]
     for func, name in filters:
         try:
@@ -102,7 +107,16 @@ def main():
         else:
             logger.error_print("QA: 过滤程序执行中断")
         
-        # 只有当两个程序都成功时才返回True
+        # 执行output_targets_to_csv
+        logger.info_print("开始执行output_targets_to_csv")
+        try:
+            output_targets_to_csv()
+            logger.info_print("output_targets_to_csv 执行成功")
+        except Exception as e:
+            logger.error_print(f"output_targets_to_csv 执行过程中发生错误: {str(e)}")
+            return False
+        
+        # 只有当所有程序都成功时才返回True
         return success_qa_sequence and success_filters
     
     except Exception as e:
