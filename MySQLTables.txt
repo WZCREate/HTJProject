@@ -102,3 +102,17 @@ CREATE TABLE `WK` (
   `status` varchar(10) DEFAULT 'active' COMMENT '股票状态：active-正常，st-退市或无数据',
   PRIMARY KEY (`id`,`wkn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='股票周K线数据';
+
+StkFilterQA.FilterResults:
+CREATE TABLE `FilterResults` (
+  `ID` char(6) NOT NULL,
+  `FilterDate` date NOT NULL,
+  `FilteredBy` tinyint NOT NULL DEFAULT '0' COMMENT '0:未过滤,1:Filter1,2:Filter2,3:Filter3',
+  `F_WK` tinyint NOT NULL DEFAULT '0' COMMENT '0:未过滤,1:被Filter4过滤',
+  `F_Triangle` tinyint NOT NULL DEFAULT '0' COMMENT '0:未过滤,1:被Filter5过滤',
+  `NextCHG` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`ID`,`FilterDate`),
+  CONSTRAINT `filterresults_chk_1` CHECK ((`FilteredBy` in (0,1,2,3))),
+  CONSTRAINT `filterresults_chk_2` CHECK ((`F_WK` in (0,1))),
+  CONSTRAINT `filterresults_chk_3` CHECK ((`F_Triangle` in (0,1)))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='股票过滤结果表';

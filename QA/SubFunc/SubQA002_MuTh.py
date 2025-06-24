@@ -15,6 +15,14 @@ from datetime import datetime
 import time
 from requests.exceptions import SSLError
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# 确保导入当前项目的CommonFunc模块
+current_file_dir = os.path.dirname(os.path.abspath(__file__))  # QA/SubFunc/
+qa_func_dir = os.path.dirname(current_file_dir)               # QA/
+project_root = os.path.dirname(qa_func_dir)                  # StockFilter/
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)  # 将当前项目路径插入到最前面
+
 from CommonFunc.DBconnection import find_config_path, load_config, set_log, db_con_pymysql
 import random
 import requests

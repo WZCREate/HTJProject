@@ -45,7 +45,7 @@
         "database": "StkFilterQA"
     },
     "DB_tables": {
-        "daily_update_table": "Feb12",
+        "daily_update_table": "Feb14",
         "table_to_update_flag": "StockMain",
         "main_query_table": "StockMain",
         "buffer_table": "buffer",
@@ -56,11 +56,11 @@
         "filter_results": "FilterResults"
     },
     "DBinput": {
-        "last_update_date": "2025-02-12"
+        "last_update_date": "2025-02-14"
     },
     "ProgormInput": {
-        "massive_insrt_start_date": "20250208",
-        "massive_insrt_end_date": "20250210",
+        "massive_insrt_start_date": "20250214",
+        "massive_insrt_end_date": "20250620",
         "compare_base_date": "2024-11-27",
         "compare_other_date": "2024-11-26",
         "missed_ones_start_date": "20250102",
