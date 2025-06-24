@@ -60,7 +60,7 @@
     },
     "ProgormInput": {
         "massive_insrt_start_date": "20250214",
-        "massive_insrt_end_date": "20250620",
+        "massive_insrt_end_date": "20250624",
         "compare_base_date": "2024-11-27",
         "compare_other_date": "2024-11-26",
         "missed_ones_start_date": "20250102",
