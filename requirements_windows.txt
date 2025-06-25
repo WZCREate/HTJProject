@@ -49,10 +49,10 @@ urllib3>=2.2.0
 six>=1.16.0
 
 # 可选：如果需要JavaScript支持，建议使用nodejs替代mini-racer
-# nodejs可以通过Windows包管理器安装
+nodejs可以通过Windows包管理器安装
 
 # 如果需要XML处理，建议先尝试安装预编译版本
-# lxml>=5.3.0
+lxml>=5.3.0
 
 # 如果需要加密功能，建议使用Windows预编译版本
-# cryptography>=43.0.0 
+cryptography>=43.0.0 

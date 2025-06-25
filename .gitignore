@@ -52,3 +52,6 @@ PROD/CSVs/
 QA/Logs/
 QA/CSVs/
 CommonFunc/Logs/
+
+QA/config.json
+PROD/config.json
